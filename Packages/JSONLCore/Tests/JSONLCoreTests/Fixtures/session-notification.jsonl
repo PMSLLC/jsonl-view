@@ -1,0 +1,5 @@
+{"type":"user","sessionId":"s1","timestamp":"2026-11-04T10:00:00.000Z","message":{"role":"user","content":"start the review"}}
+{"type":"assistant","sessionId":"s1","timestamp":"2026-11-04T10:00:05.000Z","message":{"role":"assistant","content":[{"type":"tool_use","id":"t1","name":"Agent","input":{"description":"Review Task 5"}}]}}
+{"type":"user","sessionId":"s1","timestamp":"2026-11-04T10:05:00.000Z","message":{"role":"user","content":"<task-notification>\n<task-id>abc</task-id>\n<status>completed</status>\n<summary>Agent \"Review Task 5\" finished</summary>\n<result>All good</result>\n</task-notification>"}}
+{"type":"user","sessionId":"s1","timestamp":"2026-11-04T10:06:00.000Z","message":{"role":"user","content":[{"type":"text","text":"<task-notification><task-id>def</task-id><status>failed</status></task-notification>"}]}}
+{"type":"assistant","sessionId":"s1","timestamp":"2026-11-04T10:06:05.000Z","message":{"role":"assistant","content":[{"type":"text","text":"Review done."}]}}

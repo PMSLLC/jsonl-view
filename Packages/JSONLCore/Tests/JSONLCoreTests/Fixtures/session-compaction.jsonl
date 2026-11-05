@@ -1,0 +1,5 @@
+{"type":"user","sessionId":"c1","timestamp":"2026-11-04T09:00:00.000Z","message":{"role":"user","content":"build the synthetic widget"}}
+{"type":"assistant","sessionId":"c1","timestamp":"2026-11-04T09:00:05.000Z","message":{"role":"assistant","content":[{"type":"text","text":"Widget built."}]}}
+{"type":"user","sessionId":"c1","isCompactSummary":true,"isVisibleInTranscriptOnly":true,"timestamp":"2026-11-04T10:00:00.000Z","message":{"role":"user","content":"This session is being continued from a previous conversation. Summary: the user asked for a synthetic widget and it was built."}}
+{"type":"user","sessionId":"c1","isCompactSummary":true,"timestamp":"2026-11-04T10:00:01.000Z","message":{"role":"user","content":[{"type":"text","text":"Block summary one"},{"type":"text","text":"Block summary two"}]}}
+{"type":"user","sessionId":"c1","timestamp":"2026-11-04T10:01:00.000Z","message":{"role":"user","content":"now add tests"}}

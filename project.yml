@@ -1,0 +1,50 @@
+name: JSONLView
+options:
+  bundleIdPrefix: com.brahy
+  deploymentTarget:
+    macOS: "27.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    DEVELOPMENT_TEAM: 997DW79YCR
+    CODE_SIGN_STYLE: Automatic
+    MACOSX_DEPLOYMENT_TARGET: "27.0"
+packages:
+  JSONLCore:
+    path: Packages/JSONLCore
+targets:
+  JSONLView:
+    type: application
+    platform: macOS
+    sources: [App]
+    dependencies:
+      - package: JSONLCore
+      - package: JSONLCore
+        product: JSONLSummarizer
+      - target: JSONLPreview
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.brahy.jsonl-view
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: App/JSONLView.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+  JSONLPreview:
+    type: app-extension
+    platform: macOS
+    sources: [Preview]
+    dependencies:
+      - package: JSONLCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.brahy.jsonl-view.preview
+        INFOPLIST_FILE: Preview/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Preview/JSONLPreview.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+schemes:
+  JSONLView:
+    build:
+      targets:
+        JSONLView: all
+    test:
+      targets: []

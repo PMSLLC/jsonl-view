@@ -1,0 +1,4 @@
+{"type":"user","sessionId":"sub-parent","cwd":"/work/demo","gitBranch":"main","timestamp":"2026-01-03T10:00:00.000Z","message":{"role":"user","content":"Review the parser changes"}}
+{"type":"assistant","sessionId":"sub-parent","timestamp":"2026-01-03T10:00:01.000Z","message":{"role":"assistant","model":"claude-opus-5-5","content":[{"type":"tool_use","id":"toolu_fixture_a1","name":"Agent","input":{"description":"Re-review parser","prompt":"Check the parser"}}]}}
+{"type":"user","sessionId":"sub-parent","timestamp":"2026-01-03T10:00:09.000Z","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"toolu_fixture_a1","content":"Parser looks fine."}]}}
+{"type":"assistant","sessionId":"sub-parent","timestamp":"2026-01-03T10:00:10.000Z","message":{"role":"assistant","model":"claude-opus-5-5","content":[{"type":"text","text":"The parser review is clean."}]}}
